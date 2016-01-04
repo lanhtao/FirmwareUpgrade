@@ -1,0 +1,37 @@
+<config>
+        <logging>
+                <loggers>
+                        <root>
+                                <level>debug</level>
+                                <channel>
+                                        <class>SplitterChannel</class>
+                                        <channel1>stdout</channel1>
+                                        <channel2>filelog</channel2>
+                                </channel>
+                        </root>
+                </loggers>
+                <channels>
+                        <stdout>
+                                <class>ConsoleChannel</class>
+                                <formatter>
+                                        <class>PatternFormatter</class>
+                                        <pattern>[%p] %t</pattern>
+                                </formatter>
+                        </stdout>
+                        <filelog>
+                                <class>FileChannel</class>
+                                <path>HTTPClient.log</path>
+                                <formatter>
+                                        <class>PatternFormatter</class>
+                                        <pattern>%Y-%m-%d %H:%M:%S [%p] %t</pattern>
+                                </formatter>
+                        </filelog>
+                </channels>
+        </logging>
+        <Firmware>
+                <version value="1.0.1"/>
+                <filename value="HomeControlCenter_base1.1.0"/>
+                <downloadpath value="/tmp/"/>
+                <storagepath value="/root/"/>
+        </Firmware>
+</config> 
