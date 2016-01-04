@@ -30,7 +30,7 @@
         </logging>
         <Firmware>
                 <version value="1.0.1"/>
-                <filename value="HomeControlCenter_base1.1.0"/>
+                <filename value="firmware"/>
                 <downloadpath value="/tmp/"/>
                 <storagepath value="/root/"/>
         </Firmware>
